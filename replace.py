@@ -12,6 +12,7 @@ def replace_regex(file ,r):
         # data = re.sub(r'<\? include\("inc/coluna-lateral.php"\);\?>', r'<? include("inc/coluna-lateral-produtos.php");?>', data, flags=re.IGNORECASE)
         # data = re.sub(r'</article>', r'</article> \n    <? include("inc/coluna-lateral-produtos.php");?>', data, flags=re.IGNORECASE)
         # data = re.sub(r'([^\.])<\/p>[\n\r ]*?<p>', r'\1 ', data, flags=re.IGNORECASE)
+        # data = re.sub(r'<p>(.{1,46})</p>', r'<h2>\1</h2>', data, flags=re.IGNORECASE)
         
         # {start}([\n\r ]|.*)*?{end}
         
